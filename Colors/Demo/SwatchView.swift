@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct SwatchView: View {
-    @State var swatchColor: Color = .blue
+    var swatchColor: Color = .blue
     
     var body: some View {
         RoundedRectangle(cornerRadius: 15.0)
             .fill(swatchColor)
             .frame(width: 80, height: 80.0)
+            .shadow(color: .black, radius: 10.0, x: 10.0, y: 10.0)
+        
     }
 }
 
@@ -21,4 +23,5 @@ struct SwatchView: View {
     SwatchView(swatchColor: .cayenne)
     SwatchView(swatchColor: .yellow)
     SwatchView(swatchColor: .green)
+    SwatchView(swatchColor: .nearWhite)
 }
