@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DarkSwatch: View {
+    var color: Color = .nearWhite
+    
     var body: some View {
         Circle()
             .fill(.nearBlack)
@@ -16,11 +18,14 @@ struct DarkSwatch: View {
             .overlay {
                 Circle()
                     .frame(width: 60.0, height: 60.0, alignment: .center)
-                    .foregroundStyle(.blue227)
+                    .foregroundStyle(color)
             }
     }
 }
 
 #Preview {
-    DarkSwatch()
+    DarkSwatch(color: .cayenne)
+    DarkSwatch(color: .nearWhite)
+    DarkSwatch(color: .deepBlue)
+    DarkSwatch(color: .gold)    
 }
