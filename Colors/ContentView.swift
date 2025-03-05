@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let adaptiveColumn = [
+        GridItem(.adaptive(minimum: 110))
+    ]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            //let x = enumerateColors()
+        LazyVGrid(columns: adaptiveColumn, spacing: 10) {
+            SwatchView(swatchColor: .cayenne)
+            SwatchView(swatchColor: .nearGreen)
+            SwatchView(swatchColor: .goodGreen)
+            SwatchView(swatchColor: .nearWhite)
+            SwatchView(swatchColor: .dashboardBlue)
+            SwatchView(swatchColor: .darkStart)
+            SwatchView(swatchColor: .devictOrange)
+            SwatchView(swatchColor: .softRed)
+            SwatchView(swatchColor: .gold)
+            SwatchView(swatchColor: .hudLightGrey)
+            SwatchView(swatchColor: .pantone448C)
+            SwatchView(swatchColor: .moss)
+            
+
+            
         }
         .padding()
     }
