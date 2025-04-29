@@ -20,15 +20,15 @@ struct ContentView: View {
             SwatchView(swatchColor: .nearWhite)
             SwatchView(swatchColor: .dashboardBlue)
             SwatchView(swatchColor: .darkStart)
-            SwatchView(swatchColor: .devictOrange)
+            SwatchView(swatchColor: .moss)
             SwatchView(swatchColor: .softRed)
             SwatchView(swatchColor: .gold)
             SwatchView(swatchColor: .hudLightGrey)
             SwatchView(swatchColor: .pantone448C)
-            SwatchView(swatchColor: .moss)
-            
-
-            
+            SwatchView(swatchColor: .devictOrange)
+            DarkSwatch(color: .devictOrange)
+            DarkSwatch(color: .moss)
+            DarkSwatch(color: .dashboardBlue)
         }
         .padding()
     }
